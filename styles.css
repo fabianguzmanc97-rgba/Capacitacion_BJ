@@ -1,0 +1,458 @@
+:root {
+    /* Paleta de colores extraída del Escudo Oficial */
+    --primary-green: #0b532c;       /* Verde Esmeralda Institucional */
+    --primary-green-dark: #07381d;  /* Verde Oscuro Sombra */
+    --accent-gold: #f1c40f;         /* Amarillo/Dorado Escudo */
+    --badge-black: #121212;         /* Negro Monograma 1CA */
+    
+    /* Fondos y Superficies */
+    --dark-bg: #0a0e0b;
+    --card-bg: #141c16;
+    --card-inner-bg: #1a251d;
+    --text-color: #f4f8f5;
+    --text-muted: #a1b5a7;
+    --border-color: #233527;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 80px; /* Espacio para que el footer no tape el contenido */
+}
+
+/* --- HEADER --- */
+.app-header {
+    background: linear-gradient(135deg, var(--primary-green-dark), var(--primary-green));
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--accent-gold);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.badge-icon {
+    background: var(--accent-gold);
+    color: var(--badge-black);
+    font-weight: 900;
+    font-size: 1.3rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--badge-black);
+}
+
+.logo-area h1 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.logo-area p {
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+    min-width: 180px;
+}
+
+#step-counter {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--accent-gold);
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 8px;
+    background: var(--dark-bg);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    width: 14.28%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-gold), #f39c12);
+    transition: width 0.4s ease-in-out;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.main-container {
+    flex: 1;
+    padding: 1.5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-card, .content-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    text-align: center;
+    width: 100%;
+}
+
+.emblem-container {
+    margin-bottom: 1rem;
+}
+
+.hero-badge {
+    max-width: 180px;
+    height: auto;
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.6));
+}
+
+.motto {
+    color: var(--accent-gold);
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.foundation-date {
+    color: var(--text-muted);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.3rem;
+}
+
+.divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+    margin: 1.5rem 0;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-card h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.content-card h2 i {
+    color: var(--accent-gold);
+}
+
+.subtitle {
+    color: var(--accent-gold);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+}
+
+.timeline-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: left;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 1.2rem;
+    background: var(--card-inner-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent-gold);
+    border: 1px solid var(--border-color);
+    border-left-width: 5px;
+}
+
+.timeline-item .year {
+    font-weight: 800;
+    color: var(--accent-gold);
+    font-size: 1.3rem;
+    min-width: 80px;
+}
+
+/* --- GRILLA GENERAL DE TARJETAS --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.profile-card {
+    background: var(--card-inner-bg);
+    padding: 0.8rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-gold);
+}
+
+.profile-card.highlight {
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 15px rgba(241, 196, 15, 0.2);
+}
+
+/* --- ENCUADRE DE FOTOGRAFÍAS --- */
+.avatar-img-container {
+    width: 100%;
+    height: 190px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid var(--accent-gold);
+    background: #090d0a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 2px;
+}
+
+.profile-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 0.2rem;
+}
+
+.role-badge {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.35rem 0.8rem;
+    border-radius: 20px;
+    background: var(--badge-black);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.role-badge.superintendente { background: #8b0000; color: #fff; border: none; }
+.role-badge.vice { background: #a04000; color: #fff; border: none; }
+.role-badge.comandante { background: #b9770e; color: #fff; border: none; }
+.role-badge.tesorero { background: #1f618d; color: #fff; border: none; }
+.role-badge.secretario { background: #117a65; color: #fff; border: none; }
+.role-badge.intendente { background: #6c3483; color: #fff; border: none; }
+.role-badge.operativo { background: var(--primary-green); color: #fff; border: none; }
+.role-badge.maquinista { background: #d35400; color: #fff; border: none; }
+
+.card-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.3;
+}
+
+/* --- DISPOSICIÓN 4x2 PARA OFICIALES GENERALES (8 TARJETAS) --- */
+#slide-3 .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+}
+
+/* --- DISPOSICIÓN 3x2 PARA MANDO OPERATIVO (6 TARJETAS) --- */
+#slide-4 .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* --- FOOTER FIJO ABAJO EN LA PANTALLA --- */
+.controls-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: var(--badge-black);
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid var(--primary-green);
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.6);
+    z-index: 9999;
+}
+
+.btn-nav {
+    background: var(--primary-green);
+    color: #ffffff;
+    border: none;
+    padding: 0.65rem 1.4rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s ease;
+}
+
+.btn-nav:hover:not(:disabled) {
+    background: #0e6b39;
+}
+
+.btn-nav:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.step-indicator {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border-color);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+    background: var(--accent-gold);
+    transform: scale(1.3);
+}
+
+/* --- ADAPTACIÓN RESPONSIVA --- */
+@media (max-width: 1100px) {
+    #slide-3 .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    #slide-4 .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #slide-3 .cards-grid,
+    #slide-4 .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* --- DISPOSICIÓN 2x2 PARA MANDO ADMINISTRATIVO --- */
+#slide-5 .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+    max-width: 900px;
+    margin: 1.5rem auto 0 auto;
+}
+
+#slide-5 .avatar-img-container {
+    height: 240px; /* Incrementa la altura de las fotografías */
+}
+
+.role-badge.admin {
+    background: #117a65;
+    color: #fff;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    #slide-5 .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* --- DISPOSICIÓN 3x2 PARA DIRECTORES HONORARIOS (6 TARJETAS) --- */
+#slide-6 .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 1rem auto 0 auto;
+}
+
+.role-badge.dh {
+    background: #7d6608;
+    color: #ffffff;
+    border: 1px solid var(--accent-gold);
+}
+
+@media (max-width: 992px) {
+    #slide-6 .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #slide-6 .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.role-badge.mh {
+    background: #1b4f72;
+    color: #ffffff;
+    border: 1px solid var(--accent-gold);
+}
+.role-badge.vh {
+    background: #145a32;
+    color: #ffffff;
+    border: 1px solid var(--accent-gold);
+}

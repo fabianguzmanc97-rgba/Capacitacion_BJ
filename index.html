@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacitación Brigada Juvenil - Primera Compañía Bomba O'Higgins</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="logo-area">
+            <div class="badge-icon">1ª</div>
+            <div>
+                <h1>BOMBA O'HIGGINS</h1>
+                <p>Módulo de Instrucción Brigada Juvenil</p>
+            </div>
+        </div>
+        <div class="progress-container">
+            <span id="step-counter">Paso 1 de 8</span>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progress-fill"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- PASO 1: PORTADA -->
+        <section class="slide active" id="slide-1">
+            <div class="hero-card">
+                <div class="emblem-container">
+                    <img src="assets/logo-bomba-ohiggins.png" alt="Insignia Bomba O'Higgins" class="hero-badge"
+                        onerror="this.src='https://via.placeholder.com/180x240/0d522c/ffffff?text=1a+Bomba+O\'Higgins'">
+                </div>
+                <h2 class="motto">"UNIÓN ES FUERZA"</h2>
+                <p class="foundation-date">Fundada el 12 de Febrero de 1882</p>
+                <hr class="divider">
+                <p class="hero-description">
+                    Bienvenido al módulo interactivo de formación institucional. Aquí aprenderás sobre la historia,
+                    estructura jerárquica, oficiales generales y mandos de la Primera Compañía de Bomberos de Rancagua.
+                </p>
+            </div>
+        </section>
+
+        <!-- PASO 2: HISTORIA -->
+        <section class="slide" id="slide-2">
+            <div class="content-card">
+                <h2><i class="fas fa-history"></i> Historia y Fundamentos</h2>
+                <p class="subtitle">Cuerpo de Bomberos de Rancagua</p>
+                <div class="timeline-box">
+                    <div class="timeline-item">
+                        <div class="year">1882</div>
+                        <div class="event">
+                            <h4>Fundación de la Compañía</h4>
+                            <p>Un 12 de febrero de 1882 nace la Primera Compañía "Bomba O'Higgins", respondiendo a la
+                                necesidad de protección y servicio a la comunidad de Rancagua bajo el lema "Unión es
+                                Fuerza".</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">Valores</div>
+                        <div class="event">
+                            <h4>Constancia y Disciplina</h4>
+                            <p>El pilar fundamental de nuestra institución se basa en el honor, la entrega desinteresada
+                                y la preparación continua de cada voluntario y cadete.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PASO 3: OFICIALES GENERALES (8 TARJETAS - 4x2) -->
+        <section class="slide" id="slide-3">
+            <div class="content-card">
+                <h2><i class="fas fa-sitemap"></i> Oficiales Generales</h2>
+                <p class="subtitle">Cuerpo de Bomberos de Rancagua (Periodo 2024-2026)</p>
+                <div class="cards-grid">
+                    <!-- 1. Superintendente -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Of_generales/super.png" alt="Raúl Montecinos Reveco" class="profile-img">
+                        </div>
+                        <h3>Raúl Montecinos Reveco</h3>
+                        <span class="role-badge superintendente">Superintendente</span>
+                    </div>
+
+                    <!-- 2. Vice Superintendente -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Of_generales/vice.png" alt="David Guajardo Lufi" class="profile-img">
+                        </div>
+                        <h3>David Guajardo Lufi</h3>
+                        <span class="role-badge vice">Vice Superintendente</span>
+                    </div>
+
+                    <!-- 3. Comandante -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Of_generales/comandante 1.png" alt="Marcos Fernández Paredes"
+                                class="profile-img">
+                        </div>
+                        <h3>Marcos Fernández Paredes</h3>
+                        <span class="role-badge comandante">Comandante</span>
+                    </div>
+
+                    <!-- 4. Segundo Comandante -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Of_generales/comandante 2.jfif" alt="Carlos Droguett Velasco"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Segundo+Comandante'">
+                        </div>
+                        <h3>Carlos Droguett Velasco</h3>
+                        <span class="role-badge comandante">Segundo Comandante</span>
+                    </div>
+
+                    <!-- 5. Tercer Comandante -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Of_generales/comandante 3.png" alt="Eleodoro Romero Riveros"
+                                class="profile-img">
+                        </div>
+                        <h3>Eleodoro Romero Riveros</h3>
+                        <span class="role-badge comandante">Tercer Comandante</span>
+                    </div>
+
+                    <!-- 6. Secretario General -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Of_generales/secretario.png" alt="Marco Santibáñez Escudero"
+                                class="profile-img">
+                        </div>
+                        <h3>Marco Santibáñez Escudero</h3>
+                        <span class="role-badge secretario">Secretario General</span>
+                    </div>
+
+                    <!-- 7. Tesorero General -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Of_generales/tesorero.png" alt="Carlos Varas Ramírez" class="profile-img">
+                        </div>
+                        <h3>Carlos Varas Ramírez</h3>
+                        <span class="role-badge tesorero">Tesorero General</span>
+                    </div>
+
+                    <!-- 8. Intendente General -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Of_generales/intendente.png" alt="Jhon Sandoval Ramírez"
+                                class="profile-img">
+                        </div>
+                        <h3>Jhon Sandoval Ramírez</h3>
+                        <span class="role-badge intendente">Intendente General</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PASO 4: MANDO OPERATIVO -->
+        <section class="slide" id="slide-4">
+            <div class="content-card">
+                <h2><i class="fas fa-fire-extinguisher"></i> Mando Operativo</h2>
+                <p class="subtitle">Oficiales de Compañía</p>
+                <div class="cards-grid">
+                    <div class="profile-card highlight">
+                        <div class="avatar-img-container">
+                            <img src="assets/Mando Operativo/Hector Chinchon (Capitan).jpeg" alt="Héctor Chinchón"
+                                class="profile-img">
+                        </div>
+                        <h3>Héctor Chinchón</h3>
+                        <span class="role-badge operativo">Capitán</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Mando Operativo/Luis Venegas (teniente primero).jpeg" alt="Luis Venegas"
+                                class="profile-img">
+                        </div>
+                        <h3>Luis Venegas</h3>
+                        <span class="role-badge operativo">Teniente 1°</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Mando Operativo/Miguel Perez (teniente segundo).jpeg" alt="Miguel Pérez"
+                                class="profile-img">
+                        </div>
+                        <h3>Miguel Pérez</h3>
+                        <span class="role-badge operativo">Teniente 2°</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Mando Operativo/Hector Brisso(teniente tercero).jpeg" alt="Héctor Brisso"
+                                class="profile-img">
+                        </div>
+                        <h3>Héctor Brisso</h3>
+                        <span class="role-badge operativo">Teniente 3°</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Mando Operativo/Felipe Torres(ayudante).jpeg" alt="Felipe Torres"
+                                class="profile-img">
+                        </div>
+                        <h3>Felipe Torres</h3>
+                        <span class="role-badge operativo">Ayudante</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Mando Operativo/Sergio Olguin (oficial maquinista).jpeg"
+                                alt="Sergio Olguín" class="profile-img">
+                        </div>
+                        <h3>Sergio Olguín</h3>
+                        <span class="role-badge maquinista">Oficial Maquinista</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PASO 5: MANDO ADMINISTRATIVO -->
+        <section class="slide" id="slide-5">
+            <div class="content-card">
+                <h2><i class="fas fa-tasks"></i> Mando Administrativo</h2>
+                <p class="subtitle">Gestión Interna de la Compañía</p>
+                <div class="cards-grid admin-grid">
+                    <!-- 1. Director -->
+                    <div class="profile-card highlight">
+                        <div class="avatar-img-container">
+                            <img src="assets/Mando Administrativo/Cristian Araya (Director).jpeg" alt="Cristian Araya"
+                                class="profile-img">
+                        </div>
+                        <h3>Cristian Araya</h3>
+                        <span class="role-badge admin">Director</span>
+                    </div>
+
+                    <!-- 2. Secretario -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Mando Administrativo/Patricio Plaza(Secretario).jpeg" alt="Patricio Plaza"
+                                class="profile-img">
+                        </div>
+                        <h3>Patricio Plaza</h3>
+                        <span class="role-badge secretario">Secretario</span>
+                    </div>
+
+                    <!-- 3. Tesorero -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Mando Administrativo/Christian Guzman(Tesorero).jpeg"
+                                alt="Christian Guzmán" class="profile-img">
+                        </div>
+                        <h3>Christian Guzmán</h3>
+                        <span class="role-badge tesorero">Tesorero</span>
+                    </div>
+
+                    <!-- 4. Intendente -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Mando Administrativo/Matias Serrano (Intendente).jpeg" alt="Matías Serrano"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Intendente'">
+                        </div>
+                        <h3>Matías Serrano</h3>
+                        <span class="role-badge intendente">Intendente</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PASO 6: DIRECTORES HONORARIOS (ORDEN ALFABÉTICO) -->
+        <section class="slide" id="slide-6">
+            <div class="content-card">
+                <h2><i class="fas fa-medal"></i> Directores Honorarios</h2>
+                <p class="subtitle">Nómina Oficial - Máxima Distinción Institucional (DH)</p>
+                <div class="cards-grid dh-grid">
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Directores_Honorarios/Freddy Bahamondes (DH).jpeg"
+                                alt="Freddy Bahamondes Brisso" class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Freddy+Bahamondes'">
+                        </div>
+                        <h3>Freddy Bahamondes Brisso</h3>
+                        <span class="role-badge dh">Director Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Directores_Honorarios/Jaime Espinoza (DH).jpeg"
+                                alt="Jaime Espinoza Espinosa" class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Jaime+Espinoza'">
+                        </div>
+                        <h3>Jaime Espinoza Espinosa</h3>
+                        <span class="role-badge dh">Director Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Directores_Honorarios/Juan Carlos Field (DH).jpeg"
+                                alt="Juan Carlos Field Bravo" class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Juan+Carlos+Field'">
+                        </div>
+                        <h3>Juan Carlos Field Bravo</h3>
+                        <span class="role-badge dh">Director Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Directores_Honorarios/Juan Mendez (DH).jpeg" alt="Juan Méndez Bustamante"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Juan+Méndez'">
+                        </div>
+                        <h3>Juan Méndez Bustamante</h3>
+                        <span class="role-badge dh">Director Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Directores_Honorarios/Victor Peña (DH).jpeg" alt="Víctor Peña Ahumada"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Víctor+Peña'">
+                        </div>
+                        <h3>Víctor Peña Ahumada</h3>
+                        <span class="role-badge dh">Director Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Directores_Honorarios/juan_catejo.png" alt="Juan Catejo Tapia"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Juan+Catejo+Tapia'">
+                        </div>
+                        <h3>Juan Catejo Tapia</h3>
+                        <span class="role-badge dh">Director Honorario</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PASO 7: MIEMBROS HONORARIOS (ORDEN ALFABÉTICO) -->
+        <section class="slide" id="slide-7">
+            <div class="content-card">
+                <h2><i class="fas fa-award"></i> Miembros Honorarios</h2>
+                <p class="subtitle">Nómina Oficial de Compañía (MH)</p>
+                <div class="cards-grid roster-grid">
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/Carlos Bahamondes Brisso (MH).jpeg"
+                                alt="Carlos Bahamondes Brisso" class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Carlos+Bahamondes'">
+                        </div>
+                        <h3>Carlos Bahamondes Brisso</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/Carlos Moran(MH).jpeg" alt="Carlos Morán Montoya"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Carlos+Morán'">
+                        </div>
+                        <h3>Carlos Morán Montoya</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/Francisco Correa (MH).jpeg" alt="Francisco Correa Jara"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Francisco+Correa'">
+                        </div>
+                        <h3>Francisco Correa Jara</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/Hernan Henriquez(MH).jpeg" alt="Hernán Henríquez Muñoz"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Hernán+Henríquez'">
+                        </div>
+                        <h3>Hernán Henríquez Muñoz</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/Hugo Martinez (MH).jpeg" alt="Hugo Martínez Higueras"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Hugo+Martínez'">
+                        </div>
+                        <h3>Hugo Martínez Higueras</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/jaime_corvalan.png" alt="Jaime Corvalán Jiménez"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Jaime+Corvalán'">
+                        </div>
+                        <h3>Jaime Corvalán Jiménez</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/Juan Perez (MH).jpeg" alt="Juan Pérez Rubio"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Juan+Pérez'">
+                        </div>
+                        <h3>Juan Pérez Rubio</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/Juan Toledo(MH).jpeg" alt="Juan Toledo Rebolledo"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Juan+Toledo'">
+                        </div>
+                        <h3>Juan Toledo Rebolledo</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/leonidas_correa.png" alt="Leónidas Correa Jara"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Leónidas+Correa'">
+                        </div>
+                        <h3>Leónidas Correa Jara</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/manuel_farias.png" alt="Manuel Farías Pozo"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Manuel+Farías'">
+                        </div>
+                        <h3>Manuel Farías Pozo</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/Mario Vargas(MH).jpeg" alt="Mario Vargas Gómez"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Mario+Vargas'">
+                        </div>
+                        <h3>Mario Vargas Gómez</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/Alfredo Valenzuela (MH).jpeg"
+                                alt="Alfredo Valenzuela Gallardo" class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Alfredo+Valenzuela'">
+                        </div>
+                        <h3>Alfredo Valenzuela Gallardo</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/Omar Torrealba (MH).jpeg" alt="Omar Torrealba Escárate"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Omar+Torrealba'">
+                        </div>
+                        <h3>Omar Torrealba Escárate</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/Roberto Monje(MH).jpeg" alt="Roberto Monje Navarro"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Roberto+Monje'">
+                        </div>
+                        <h3>Roberto Monje Navarro</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Miembros_Honorarios/roberto_torres.png" alt="Roberto Torres Almonacid"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Roberto+Torres'">
+                        </div>
+                        <h3>Roberto Torres Almonacid</h3>
+                        <span class="role-badge mh">Miembro Honorario</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PASO 8: BOMBEROS HONORARIOS -->
+        <section class="slide" id="slide-8">
+            <div class="content-card">
+                <h2><i class="fas fa-user-shield"></i> Voluntarios Honorarios</h2>
+                <p class="subtitle">Nómina Oficial de Compañía (VH)</p>
+                <div class="cards-grid roster-grid">
+                    <!-- 1. Aravena Araya Cristian -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/Cristian Aravena.jpeg" alt="Cristian Aravena Araya"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Cristian+Aravena'">
+                        </div>
+                        <h3>Cristian Aravena Araya</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 3. Arévalo Arévalo José Luis -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/José Arevalo.jpeg" alt="José Luis Arévalo Arévalo"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=José+Arévalo'">
+                        </div>
+                        <h3>José Luis Arévalo Arévalo</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 4. Bahamondes Brisso Carlos -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/Carlos Bahamondes Guevera.jpeg"
+                                alt="Carlos Bahamondes Brisso" class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Carlos+Bahamondes'">
+                        </div>
+                        <h3>Carlos Bahamondes Brisso</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 5. Bahamondes Sergio Omar -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/Sergio Bahamondes.jpeg" alt="Sergio Omar Bahamondes"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Sergio+Bahamondes'">
+                        </div>
+                        <h3>Sergio Omar Bahamondes</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 6. Chávez Meza Rodrigo -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/rodrigo_chavez.png" alt="Rodrigo Chávez Meza"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Rodrigo+Chávez'">
+                        </div>
+                        <h3>Rodrigo Chávez Meza</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 7. Gaete Peña José -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/José Gaete.jpeg" alt="José Gaete Peña"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=José+Gaete'">
+                        </div>
+                        <h3>José Gaete Peña</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 8. Gaete Pérez Patricio -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/Patricio Gaete.jpeg" alt="Patricio Gaete Pérez"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Patricio+Gaete'">
+                        </div>
+                        <h3>Patricio Gaete Pérez</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 9. Guzmán Orellana René -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/René Guzman.jpeg" alt="René Guzmán Orellana"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=René+Guzmán'">
+                        </div>
+                        <h3>René Guzmán Orellana</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 10. Martínez Vera Ricardo -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/Ricardo Martinez.jpeg" alt="Ricardo Martínez Vera"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Ricardo+Martínez'">
+                        </div>
+                        <h3>Ricardo Martínez Vera</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 11. Meza Vargas Juan -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/Juan Carlos Meza.jpeg" alt="Juan Meza Vargas"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Juan+Meza'">
+                        </div>
+                        <h3>Juan Meza Vargas</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 12. Miranda Arriola Carlos -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/carlos_miranda.png" alt="Carlos Miranda Arriola"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Carlos+Miranda'">
+                        </div>
+                        <h3>Carlos Miranda Arriola</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 13. Moran Zamorano Gonzalo -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/Gonzalo Morán.jpeg" alt="Gonzalo Morán Zamorano"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Gonzalo+Morán'">
+                        </div>
+                        <h3>Gonzalo Morán Zamorano</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 14. Nieto Toro Javiera -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/javiera_nieto.png" alt="Javiera Nieto Toro"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Javiera+Nieto'">
+                        </div>
+                        <h3>Javiera Nieto Toro</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 15. Rojas Espina Humberto -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/Humberto Rojas.jpeg" alt="Humberto Rojas Espina"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Humberto+Rojas'">
+                        </div>
+                        <h3>Humberto Rojas Espina</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 16. Rojas Martínez Manuel -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/manuel_rojas.png" alt="Manuel Rojas Martínez"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Manuel+Rojas'">
+                        </div>
+                        <h3>Manuel Rojas Martínez</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 17. Romero Reyes Alfredo -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/alfredo_romero.png" alt="Alfredo Romero Reyes"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Alfredo+Romero'">
+                        </div>
+                        <h3>Alfredo Romero Reyes</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 18. Sánchez Morán Pablo -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/Pablo Sanchez.jpeg" alt="Pablo Sánchez Morán"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Pablo+Sánchez'">
+                        </div>
+                        <h3>Pablo Sánchez Morán</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 19. Ulloa Carmona Francisco -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/Francisco Ulloa.jpeg" alt="Francisco Ulloa Carmona"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Francisco+Ulloa'">
+                        </div>
+                        <h3>Francisco Ulloa Carmona</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+
+                    <!-- 20. Vargas Tobar Miguel -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Honorarios/miguel_vargas.png" alt="Miguel Vargas Tobar"
+                                class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Miguel+Vargas'">
+                        </div>
+                        <h3>Miguel Vargas Tobar</h3>
+                        <span class="role-badge vh">Voluntario Honorario</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PASO 9: VOLUNTARIOS ACTIVOS -->
+        <section class="slide" id="slide-9">
+            <div class="content-card">
+                <h2><i class="fas fa-users"></i> Voluntarios Activos</h2>
+                <p class="subtitle">Nómina Oficial de Compañía (VA)</p>
+                <div class="cards-grid roster-grid">
+                    <!-- 1. Aravena Correa Martina -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/Martina Aravena.jpeg" alt="Martina Aravena Correa" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Martina+Aravena'">
+                        </div>
+                        <h3>Martina Aravena Correa</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 2. Aravena Quijada Felipe Ignacio -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/Felipe Aravena.jpeg" alt="Felipe Ignacio Aravena Quijada" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Felipe+Aravena'">
+                        </div>
+                        <h3>Felipe Ignacio Aravena Quijada</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 3. Arriagada Contreras Joaquin -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/joaquin_arriagada.png" alt="Joaquín Arriagada Contreras" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Joaquín+Arriagada'">
+                        </div>
+                        <h3>Joaquín Arriagada Contreras</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 4. Bahamondes Contreras Carlos -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/Carlos Bahamondes Contreras.jpeg" alt="Carlos Bahamondes Contreras" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Carlos+Bahamondes+C.'">
+                        </div>
+                        <h3>Carlos Bahamondes Contreras</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 5. Balcarce Salvo Roberto -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/Roberto Balcarce.jpeg" alt="Roberto Balcarce Salvo" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Roberto+Balcarce'">
+                        </div>
+                        <h3>Roberto Balcarce Salvo</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 6. Escalona Valenzuela Francesca -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/Francesca Escalona.jpeg" alt="Francesca Escalona Valenzuela" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Francesca+Escalona'">
+                        </div>
+                        <h3>Francesca Escalona Valenzuela</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 7. Farias Aristegui Benjamín -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/benjamin_farias.png" alt="Benjamín Farías Aristegui" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Benjamín+Farías'">
+                        </div>
+                        <h3>Benjamín Farías Aristegui</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 8. Gaete Pávez Kimberly -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/Kimberly Gaete.jpeg" alt="Kimberly Gaete Pávez" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Kimberly+Gaete'">
+                        </div>
+                        <h3>Kimberly Gaete Pávez</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 9. Garate Cerda Franco -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/Franco Garate.jpeg" alt="Franco Gárate Cerda" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Franco+Gárate'">
+                        </div>
+                        <h3>Franco Gárate Cerda</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 10. Guzmán Céspedes Fabián Eliú -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/Fabian Guzman.jpeg" alt="Fabián Eliú Guzmán Céspedes" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Fabián+Guzmán'">
+                        </div>
+                        <h3>Fabián Eliú Guzmán Céspedes</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 11. Matamala Pérez Ignacio Antonio -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/ignacio_matamala.png" alt="Ignacio Antonio Matamala Pérez" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Ignacio+Matamala'">
+                        </div>
+                        <h3>Ignacio Antonio Matamala Pérez</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 12. Méndez Vidal Cristian Felipe -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/Cristian Mendez.jpeg" alt="Cristian Felipe Méndez Vidal" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Cristian+Méndez'">
+                        </div>
+                        <h3>Cristian Felipe Méndez Vidal</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 13. Pizzoleo Vergara Catalina -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/catalina_pizzoleo.png" alt="Catalina Pizzoleo Vergara" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Catalina+Pizzoleo'">
+                        </div>
+                        <h3>Catalina Pizzoleo Vergara</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 14. Rebolledo Droguett Andrés -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/Andres Rebolledo.jpeg" alt="Andrés Rebolledo Droguett" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Andrés+Rebolledo'">
+                        </div>
+                        <h3>Andrés Rebolledo Droguett</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 15. Ríos Gálvez Benjamín Andrés -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/benjamin_rios.png" alt="Benjamín Andrés Ríos Gálvez" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Benjamín+Ríos'">
+                        </div>
+                        <h3>Benjamín Andrés Ríos Gálvez</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 16. Riquelme Lira Felipe Ignacio -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/Felipe Riquelme.jpeg" alt="Felipe Ignacio Riquelme Lira" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Felipe+Riquelme'">
+                        </div>
+                        <h3>Felipe Ignacio Riquelme Lira</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+
+                    <!-- 17. Zamora Pérez Israel Alejandro -->
+                    <div class="profile-card">
+                        <div class="avatar-img-container">
+                            <img src="assets/Bomberos_Activos/israel_zamora.png" alt="Israel Alejandro Zamora Pérez" class="profile-img" onerror="this.src='https://via.placeholder.com/220x220/090d0a/f1c40f?text=Israel+Zamora'">
+                        </div>
+                        <h3>Israel Alejandro Zamora Pérez</h3>
+                        <span class="role-badge va">Voluntario Activo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER FIJO DE NAVEGACIÓN -->
+    <footer class="controls-footer">
+        <button id="btn-prev" class="btn-nav" onclick="changeSlide(-1)" disabled>
+            <i class="fas fa-arrow-left"></i> Anterior
+        </button>
+        <div class="step-indicator">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <button id="btn-next" class="btn-nav" onclick="changeSlide(1)">
+            Siguiente <i class="fas fa-arrow-right"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
